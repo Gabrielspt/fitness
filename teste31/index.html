@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness World</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="light-theme">
+    <button class="theme-button btn btn-secondary" onclick="toggleTheme()">Alterar Tema</button>
+    <div class="clock" id="clock"></div>
+    <div class="container">
+        <header>
+            <h1>Fitness World</h1>
+        </header>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="treinos.html">Treinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nutrição</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Artigos de Fitness</h2>
+
+        <div class="row">
+            <div class="card">
+                <img src="img/treino-cardio.jpg" class="card-img-top" alt="Treino Cardio">
+                <div class="card-body">
+                    <h5 class="card-title">Treino Cardio</h5>
+                    <p class="card-text">Um treino de cardio para melhorar sua resistência.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/treino-forca.jpg" class="card-img-top" alt="Receitas Saudáveis">
+                <div class="card-body">
+                    <h3 class="card-title">Treino de força</h5>
+                    <p class="card-text">Ganhe massa muscular com nosso programa de treino de força.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/images2.jfif" class="card-img-top" alt="Suplementos">
+                <div class="card-body">
+                    <h3 class="card-title">Treino de calistenia</h5>
+                    <p class="card-text">Treine pesado apenas com o peso do seu corpo.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/download.jfif" class="card-img-top" alt="Treino de Força">
+                <div class="card-body">
+                    <h3 class="card-title">Nutrição</h5>
+                    <p class="card-text">Invista em uma boa alimentação para obter melhores resultados.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/suplementos.jpg" class="card-img-top" alt="Treino de Força">
+                <div class="card-body">
+                    <h5 class="card-title">Suplementação</h5>
+                    <p class="card-text">Os melhores suplementos para seus objetivos de fitness.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Faça Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="login-form">
+                            <div class="form-group">
+                                <label for="username">Usuário</label>
+                                <input type="text" class="form-control" id="username" placeholder="Digite seu nome de usuário">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Senha</label>
+                                <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
